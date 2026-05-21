@@ -362,6 +362,7 @@ nav {
 .instagram-section {
   padding: 3rem 1.5rem;
   text-align: center;
+  overflow: hidden;
 }
 .instagram-section h2 {
   font-size: 1.7rem;
@@ -372,6 +373,13 @@ nav {
   max-width: 400px;
   margin: 0 auto;
   overflow: hidden;
+}
+/* override les styles inline injectés par embed.js */
+.instagram-embed .instagram-media,
+.instagram-embed iframe {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  width: 100% !important;
 }
 
 /* ── Footer ────────────────────────────────────────────────────── */
