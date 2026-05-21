@@ -358,6 +358,21 @@ nav {
 }
 .contact-form .btn { align-self: flex-start; }
 
+/* ── Instagram ─────────────────────────────────────────────────── */
+.instagram-section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.instagram-section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  color: var(--purple);
+}
+.instagram-embed {
+  display: flex;
+  justify-content: center;
+}
+
 /* ── Footer ────────────────────────────────────────────────────── */
 footer {
   background: var(--purple);
