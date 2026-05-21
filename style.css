@@ -5,8 +5,8 @@
 :root {
   --font-body:     'Lato', sans-serif;
   --font-heading:  'Satisfy', cursive;
-  --purple:  #3d1abb;
-  --purple2: #2e2cd5;
+  --purple:  #880c38;
+  --purple2: #A20E42;
   --soft:    #f7f3f0;
   --cream:   #fdf9f6;
   --text:    #2a2a2a;
@@ -100,7 +100,7 @@ nav {
 /* ── Tags ──────────────────────────────────────────────────────── */
 .tag {
   display: inline-block;
-  background: #ede8f8;
+  background: #fde8f0;
   color: var(--purple);
   font-size: .75rem;
 
