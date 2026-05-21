@@ -112,6 +112,24 @@ nav {
 /* ── Hero (home) ───────────────────────────────────────────────── */
 .hero { background: var(--soft); padding: 2rem 1.5rem 0; }
 .hero-banner { width: 100%; max-width: var(--max); margin: 0 auto; border-radius: var(--radius); }
+.hero-tagline {
+  text-align: center;
+  padding: 1.4rem 1.5rem 1rem;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.hero-tagline h1 {
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  color: var(--purple);
+  margin-bottom: .4rem;
+  font-weight: 400;
+}
+.hero-tagline p {
+  color: var(--muted);
+  font-size: 1rem;
+  letter-spacing: .03em;
+}
 
 /* ── Intro (home) ──────────────────────────────────────────────── */
 .intro {
@@ -125,7 +143,7 @@ nav {
   gap: 3rem;
   align-items: center;
 }
-.intro-text h1 { color: var(--purple); font-size: 2rem; margin-bottom: 1rem; }
+.intro-text h2 { color: var(--purple); font-size: 2rem; margin-bottom: 1rem; }
 .intro-text p { margin-bottom: 1rem; }
 .intro-text .btn { margin-top: .5rem; }
 .intro-photo img { border-radius: var(--radius); box-shadow: var(--shadow); }
@@ -428,6 +446,99 @@ footer p + p { margin-top: .4rem; }
   .news-img { aspect-ratio: 1/1; height: auto; }
   .intro-grid { gap: 1.5rem; }
   .page-hero h1 { font-size: 1.7rem; }
+}
+
+/* ── Tarifs ────────────────────────────────────────────────────── */
+.tarifs {
+  background: var(--soft);
+  padding: 3rem 1.5rem;
+}
+.tarifs h2 {
+  text-align: center;
+  color: var(--purple);
+  font-size: 1.7rem;
+  margin-bottom: .75rem;
+}
+.tarifs-intro {
+  text-align: center;
+  color: var(--muted);
+  font-size: .95rem;
+  margin-bottom: 2rem;
+}
+.tarifs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: var(--max);
+  margin: 0 auto 2rem;
+}
+.tarif-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  box-shadow: var(--shadow);
+}
+.tarif-icon { font-size: 1.6rem; flex-shrink: 0; }
+.tarif-info { display: flex; flex-direction: column; }
+.tarif-info strong { font-size: .92rem; color: var(--text); }
+.tarif-info span { font-size: .88rem; color: var(--purple); font-weight: 700; margin-top: .1rem; }
+
+/* ── Testimonials ───────────────────────────────────────────────── */
+.testimonials {
+  max-width: var(--max);
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+.testimonials h2 {
+  text-align: center;
+  color: var(--purple);
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.testimonial-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.3rem;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.testimonial-card::before {
+  content: '\201C';
+  position: absolute;
+  top: -.3rem;
+  left: 1rem;
+  font-size: 3.5rem;
+  color: var(--purple);
+  opacity: .15;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+.testimonial-text {
+  font-size: .92rem;
+  font-style: italic;
+  margin-bottom: .75rem;
+  line-height: 1.6;
+}
+.testimonial-author {
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--purple);
+}
+@media (max-width: 900px) {
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .testimonials-grid { grid-template-columns: 1fr; }
 }
 
 /* ── Lightbox ───────────────────────────────────────────────────── */
