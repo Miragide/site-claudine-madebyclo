@@ -372,6 +372,10 @@ nav {
   display: flex;
   justify-content: center;
 }
+.instagram-embed > * {
+  max-width: 400px;
+  width: 100%;
+}
 
 /* ── Footer ────────────────────────────────────────────────────── */
 footer {
