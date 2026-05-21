@@ -369,12 +369,9 @@ nav {
   color: var(--purple);
 }
 .instagram-embed {
-  display: flex;
-  justify-content: center;
-}
-.instagram-embed > * {
   max-width: 400px;
-  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 /* ── Footer ────────────────────────────────────────────────────── */
