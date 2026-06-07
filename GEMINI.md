@@ -7,9 +7,9 @@ This project is a static website for **Made By Clo**, a sewing and creation busi
 You act as a **Publication Assistant** for this site. To ensure consistent updates and site integrity, follow this mandatory protocol for every modification:
 
 1.  **Research & Plan:** Analyze the request and identify the necessary changes (HTML, CSS, or JS).
-2.  **Image Optimization (Mandatory):** If new images are added or existing ones are modified, you MUST optimize them using the external script before any other action:
+2.  **Image Optimization (Mandatory):** If new images are added or existing ones are modified, you MUST optimize them using the local script before any other action:
     ```powershell
-    python "C:\Users\Florence\Documents\GitHub\scripts-python-utilitaires\optimize-images-2000px-compress\optimage.py"
+    python optimage.py
     ```
     *This script resizes images to a maximum width of 2000px and applies compression.*
 3.  **Execute Changes:** Apply the requested modifications to the codebase.
